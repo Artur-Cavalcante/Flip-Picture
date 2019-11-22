@@ -25,6 +25,26 @@ body {
   border: solid 2px blue;
 }
 
+.desk {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), 2px 2px 30px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 30%;
+  padding: 2rem;
+}
+
+/* Media query example */
+@media (max-width: 780px) {
+  .desk {
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .button-box {
+    top: 70%;
+  }
+}
+
 .container {
   background: var(--main-color);
   box-shadow: 1.05px 1.05px 1.05px 1.05px;
