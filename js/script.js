@@ -72,11 +72,16 @@ function click_top_left() {
   } else {
     top_left.style.marginRight = "0%";
     top_left.style.marginBottom = "0%";
-    discovery_ok = true;
-    discovery.innerHTML = "Discovery!";
-    discovery.style.background = "var(--discovery-background)";
     top_left.classList.remove("selected");
-    show_about();
+    if (check_select()){
+      if (about.classList == "about-box container") {
+        discovery_ok = true;
+        discovery.innerHTML = "Discovery!";
+        discovery.style.background = "var(--discovery-background)";
+        show_about();
+      }
+
+    }
   }
 }
 function click_top_right() {
@@ -106,11 +111,16 @@ function click_top_right() {
   } else {
     top_right.style.marginLeft = "0%";
     top_right.style.marginBottom = "0%";
-    discovery_ok = true;
-    discovery.innerHTML = "Discovery!";
-    discovery.style.background = "var(--discovery-background)";
     top_right.classList.remove("selected");
-    show_about();
+    if (check_select()){
+      if (about.classList == "about-box container") {
+        discovery_ok = true;
+        discovery.innerHTML = "Discovery!";
+        discovery.style.background = "var(--discovery-background)";
+        show_about();
+      }
+
+    }
   }
 }
 function click_bottom_right() {
@@ -145,11 +155,16 @@ function click_bottom_right() {
     bottom_right.style.marginLeft = "0%";
     bottom_right.style.marginTop = "0%";
     bottom_left.style.marginBottom = "0%";
-    discovery_ok = true;
-    discovery.innerHTML = "Discovery!";
-    discovery.style.background = "var(--discovery-background)";
     bottom_right.classList.remove("selected");
-    show_about();
+    if (check_select()){
+      if (about.classList == "about-box container") {
+        discovery_ok = true;
+        discovery.innerHTML = "Discovery!";
+        discovery.style.background = "var(--discovery-background)";
+        show_about();
+      }
+
+    }
   }
 }
 function click_bottom_left() {
@@ -182,11 +197,16 @@ function click_bottom_left() {
     bottom_left.style.marginRight = "0%";
     bottom_left.style.marginTop = "0%";
     bottom_right.style.marginBottom = "0%";
-    discovery_ok = true;
-    discovery.innerHTML = "Discovery!";
-    discovery.style.background = "var(--discovery-background)";
     bottom_left.classList.remove("selected");
-    show_about();
+    if (check_select()){
+      if (about.classList == "about-box container") {
+        discovery_ok = true;
+        discovery.innerHTML = "Discovery!";
+        discovery.style.background = "var(--discovery-background)";
+        show_about();
+      }
+
+    }
   }
 }
 // End Click Img
@@ -323,6 +343,7 @@ function turn_right() {
 
 // Show About
 function show_about() {
+  about.classList.add("check");
   about.style +=
     "position: relative; padding-top: 1.2%; padding-bottom: 0.5%; ";
   about.innerHTML +=
@@ -330,3 +351,26 @@ function show_about() {
   about.style += "display: block";
 }
 // End Show About
+
+// Check Select for Show About
+function check_select() {
+  //Return the img for turn
+  if (top_left.style.marginBottom == "3%") {
+    return false;
+  } else {
+    if (top_right.style.marginBottom == "3%") {
+      return false;
+    } else {
+      if (bottom_right.style.marginTop == "3%") {
+        return false;
+      } else {
+        if (bottom_left.style.marginTop == "3%") {
+          return false;
+        }else{
+          return true;
+        }
+      }
+    }
+  }
+}
+// End Check Select for Show About
