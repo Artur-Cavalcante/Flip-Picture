@@ -1,6 +1,5 @@
-<p align="center">
-  <h1>Flip Picture and Discovery!<h1/>
-</p>
+
+  <h1 align="center">Flip Picture and Discovery!<h1/>
 
 ------
 
