@@ -1,4 +1,5 @@
-<h1 align="center">Flip Picture and Discovery!</h1>
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+<h1 align="center"; font-family: 'Merriweather', serif;>Flip Picture and Discovery!</h1>
 
 ------
 
