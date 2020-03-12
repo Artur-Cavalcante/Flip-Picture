@@ -1,4 +1,6 @@
-## Flip Picture and Discovery!
+<p align="center">
+  <h1>Flip Picture and Discovery!<h1/>
+</p>
 
 ------
 
