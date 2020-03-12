@@ -1,4 +1,4 @@
-<h1 style="text-align= center">Flip Picture and Discovery!</h1>
+<h1 align="center">Flip Picture and Discovery!</h1>
 ------
 
 ###
