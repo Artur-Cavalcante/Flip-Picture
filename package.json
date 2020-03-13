@@ -1,0 +1,10 @@
+{
+  "name": "flip-picture",
+  "version": "1.0.1",
+  "description": "Flip Picture correctly and discovery!",
+  "main": "index.js",
+  "repository": "https://github.com/Artur-Cavalcante/flip-picture",
+  "author": "Artur-Cavalcante",
+  "license": "MIT",
+  "private": false
+}
