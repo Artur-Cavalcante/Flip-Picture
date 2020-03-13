@@ -1,6 +1,6 @@
 <div align="center">
 
-<img  src="![FlipPictureLogo1-removebg-preview](https://user-images.githubusercontent.com/53320295/76625341-c6aa7580-6515-11ea-93e3-0adfae4da23a.png)">
+<img  src="https://github.com/Artur-Cavalcante/flip-picture/blob/migrate_to_react/FlipPictureLogo1-removebg-preview.png">
 
 </div>
 <h1 align="center">Flip Picture and Discovery!</h1>
