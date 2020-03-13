@@ -1,6 +1,6 @@
 <div align="center">
 
-<img  src="![FlipPictureLogo1-removebg-preview](https://user-images.githubusercontent.com/53320295/76624953-07ee5580-6515-11ea-9468-cba7df34fe71.png)" >
+<img  src="![FlipPictureLogo1-removebg-preview](https://user-images.githubusercontent.com/53320295/76624953-07ee5580-6515-11ea-9468-cba7df34fe71.png)" alt="Logo" >
 
 </div>
 <h1 align="center">Flip Picture and Discovery!</h1>
