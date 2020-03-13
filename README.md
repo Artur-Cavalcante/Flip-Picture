@@ -1,5 +1,5 @@
 <div align="center"> 
-   <img style="width=50px; height=100%" src="https://github.com/Artur-Cavalcante/flip-picture/blob/migrate_to_react/frontend/public/FlipPictureLogo.svg">
+   <img style="height: 200px; width: 50%;" src="https://github.com/Artur-Cavalcante/flip-picture/blob/migrate_to_react/frontend/public/FlipPictureLogo.svg">
    <h1 font-family: sans-serif;>Flip Picture and Discovery!</h1>
 </div>
 
