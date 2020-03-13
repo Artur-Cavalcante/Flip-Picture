@@ -3,6 +3,11 @@
    <h1 font-family: sans-serif;>Flip Picture and Discovery!</h1>
 </div>
 
+<div align="center">
+   <img src="https://img.shields.io/badge/yarn-v1.13.0-brightgreen">
+   <img src="https://img.shields.io/badge/react-v16.13.0-blue">
+   <img src="https://img.shields.io/badge/tailwindcss-v1.2.0-9cf">
+</div>
 
 ---
 
