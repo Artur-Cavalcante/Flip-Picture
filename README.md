@@ -15,5 +15,4 @@
 ## Just acess the website below and enjoy.
 ## Thanks.
 
-<a href="https://artur-cavalcante.github.io/flip-picture/" target="blank">Click Here For See the Website<a/>
-[I'm an inline-style link](https://www.google.com)
+[Click Here For See the Website](https://artur-cavalcante.github.io/flip-picture/)
