@@ -16,9 +16,9 @@
 ### Thanks.
 
 ### Technolgies:
-.. * Mozila Firefox
-.. * Javascript
-.. * React
-.. * React Native
-.. * TailwindCSS
-.. * Postgres
+* Mozila Firefox
+* Javascript
+* React
+* React Native
+* TailwindCSS
+* Postgres
