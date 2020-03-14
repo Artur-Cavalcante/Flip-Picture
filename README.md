@@ -16,7 +16,7 @@
 ### Thanks.
 
 
-#### Technolgies:
+.. #### Technolgies:
 * Python
 * Django
 * Javascript
