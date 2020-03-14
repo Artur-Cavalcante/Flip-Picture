@@ -9,7 +9,7 @@
    <img src="https://img.shields.io/badge/tailwindcss-v1.2.0-9cf">
 </div>
 
-===
+---
 
 ## Here your will learning about a software or some technology.
 ## Just acess the website below and enjoy.
