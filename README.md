@@ -11,7 +11,7 @@
 
 ---
 
-### Here your will learning about a software or some technology.
+Here your will learning about a software or some technology.
 Just acess the website below and enjoy.
 Thanks.
 
