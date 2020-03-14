@@ -14,16 +14,3 @@
 ### Here your will discovery about a software or some technology.
 ### Just acess the [Website](https://artur-cavalcante.github.io/flip-picture/) and enjoy.
 ### Thanks.
-
-
-#### Technolgies:
-* Python
-* Django
-* Javascript
-* React
-* React Native
-* Bootstrap
-* TailwindCSS
-* Postgres
-* Docker
-* Nginx
