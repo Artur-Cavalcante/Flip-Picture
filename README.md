@@ -15,10 +15,14 @@
 ### Just acess the [Website](https://artur-cavalcante.github.io/flip-picture/) and enjoy.
 ### Thanks.
 
-### Technolgies:
-* Mozila Firefox
+
+#### Technolgies:
+* Python
+* Django
 * Javascript
 * React
 * React Native
+* Bootstrap
 * TailwindCSS
 * Postgres
+* Docker
