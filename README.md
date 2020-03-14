@@ -26,3 +26,4 @@
 * TailwindCSS
 * Postgres
 * Docker
+* Nginx
