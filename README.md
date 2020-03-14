@@ -12,7 +12,5 @@
 ---
 
 ## Here your will learning about a software or some technology.
-## Just acess the website below and enjoy.
+## Just acess the [Website](https://artur-cavalcante.github.io/flip-picture/) and enjoy.
 ## Thanks.
-
-[Click Here For See the Website](https://artur-cavalcante.github.io/flip-picture/)
