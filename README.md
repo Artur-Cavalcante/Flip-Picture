@@ -8,9 +8,13 @@
 </div>
 
 <div align="center">
-   <img src="https://img.shields.io/badge/yarn-v1.13.0-brightgreen">
-   <img src="https://img.shields.io/badge/react-v16.13.0-blue">
-   <img src="https://img.shields.io/badge/tailwindcss-v1.2.0-9cf">
+   <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=FlipPicture&prefix=v&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FArtur-Cavalcante%2Fflip-picture%2Fmigrate_to_react%2Fpackage.json">
+   
+   <img src="https://img.shields.io/badge/dynamic/json?color=success&label=yarn&prefix=v&query=dependencies.yarn&url=https%3A%2F%2Fraw.githubusercontent.com%2FArtur-Cavalcante%2Fflip-picture%2Fmigrate_to_react%2Fpackage.json">
+   
+   <img src="https://img.shields.io/badge/dynamic/json?color=blueviolet&label=react&prefix=v&query=dependencies.react&url=https%3A%2F%2Fraw.githubusercontent.com%2FArtur-Cavalcante%2Fflip-picture%2Fmigrate_to_react%2Fpackage.json">
+   
+   <img src="https://img.shields.io/badge/dynamic/json?color=9cf&label=tailwindcss&prefix=v&query=dependencies.tailwindcss&url=https%3A%2F%2Fraw.githubusercontent.com%2FArtur-Cavalcante%2Fflip-picture%2Fmigrate_to_react%2Fpackage.json">
 </div>
 
 ---
