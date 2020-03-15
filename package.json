@@ -2,9 +2,41 @@
   "name": "flip-picture",
   "version": "1.0.1",
   "description": "Here your will discovery about a software or some technology.",
-  "main": "index.js",
   "repository": "https://github.com/Artur-Cavalcante/flip-picture",
   "author": "Artur-Cavalcante",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tailwind_build": "yarn tailwind build ./src/components/styles.css -o ./src/components/output_tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.2.0"
+  }
 }
