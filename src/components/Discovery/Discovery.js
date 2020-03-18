@@ -2,9 +2,11 @@ import React from 'react';
 
 function Discovery(){
     return(
-        <div className="">
-            
-        </div>
+        <section className="">
+            <div className="">
+
+            </div>
+        </section>
     );
 };
 
