@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DiscoveryContent from './DiscoveryContent';
 import Button from '../Button/Button';
 
@@ -9,8 +9,8 @@ function Discovery(){
     return(
         <section className="">
             <div className="">
-                <DiscoveryContent name={techs[index]}/>
-                <Button name="next"/>
+                <DiscoveryContent className="content" name={techs[index]}/>
+                <Button name="next" onClick={() => { if (index < 4){ setIndex(index + 1); }else{ setIndex(0) }}}/>
             </div>
         </section>
     );

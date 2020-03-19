@@ -66,6 +66,8 @@ function FlipImage(props){
             bottom_left = git_bottom_left;
             bottom_right = git_bottom_right;
             break;
+        default:
+            break;
     };
 
     return (
