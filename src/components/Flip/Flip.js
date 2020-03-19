@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 import FlipImage from './FlipImage';
 
+import docker_top_left from './Techs/Docker/images/top_left.png';
 
 function Flip(props) {
-    const [path_image, setPath_image] = useState(["Docker", "Firefox", "Git", "Nginx", "Postgres"]);
+    const [techs, setTechs] = useState(['docker', 'postgres', 'firefox', 'git', 'nginx']);
     const [index, setIndex] = useState(0);
 
-    
     return (
         <section className="">
             <div className="">
-                <FlipImage name={path_image[index]}/>
+                <FlipImage name={techs[index]}/>
             </div>
                 
             <div className="">
