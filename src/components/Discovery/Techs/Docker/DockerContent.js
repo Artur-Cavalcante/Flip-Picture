@@ -1,7 +1,9 @@
 import React from 'react';
 
-function docker_top_left() {
-    return ('../images/top_left.png');
+function DockerContent() {
+    return (
+        <div>Docker Content</div>
+    );
 };
 
-export default docker_top_left;
+export default DockerContent;

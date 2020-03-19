@@ -10,6 +10,7 @@ function Discovery(){
         <section className="">
             <div className="">
                 <DiscoveryContent name={techs[index]}/>
+                <Button name="next"/>
             </div>
         </section>
     );
