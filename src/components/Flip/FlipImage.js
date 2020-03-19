@@ -70,10 +70,10 @@ function FlipImage(props){
 
     return (
         <div className="">
-            <img src={top_left} alt="top_left"/>
-            <img src={top_right} alt="top_right"/>
-            <img src={bottom_left} alt="bottom_left"/>
-            <img src={bottom_right} alt="bottom_right"/>
+            <img src={top_left} className="" alt="top_left"/>
+            <img src={top_right} className="" alt="top_right"/>
+            <img src={bottom_left} className="" alt="bottom_left"/>
+            <img src={bottom_right} className="" alt="bottom_right"/>
         </div>
     );
 };
