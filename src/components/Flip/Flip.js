@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../Button/Button';
 import FlipImage from './FlipImage';
 
-function Flip() {
-    const [techs, setTechs] = useState(['docker', 'postgres', 'firefox', 'git', 'nginx']);
+function Flip(props) {
+    const [techs, setTechs] = useState(['', 'docker', 'postgres', 'firefox', 'git', 'nginx']);
     const [index, setIndex] = useState(0);
 
+    useEffect(() => {
+        NextImage();
+    },[props.next]);
     function NextImage() {
         if (index < 4) {
             setIndex(index + 1);
@@ -17,7 +20,7 @@ function Flip() {
     return (
         < section className = "" >
             <div className="">
-                <FlipImage name={techs[index]} />
+                <FlipImage name={techs[index]}  />
             </div>
 
             <div className="">
