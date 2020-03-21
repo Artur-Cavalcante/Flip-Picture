@@ -6,7 +6,7 @@ function Flip(props) {
     return (
         <section className = "" >
             <div className="">
-                <FlipImage name={props.name}  />
+                <FlipImage name={props.name} imgSelect={props.isSelect} />
             </div>
 
             <div className="">

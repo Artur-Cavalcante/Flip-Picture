@@ -23,7 +23,9 @@ function DiscoveryContent(props) {
         case "postgres":
             return <PostgresContent />;
             break;
-
+        default:
+            return <div></div>;
+            break;
     };
 };
 

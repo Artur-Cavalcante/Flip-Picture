@@ -7,9 +7,12 @@ import Footer from '../Footer/Footer';
 import '../Styles/output_tailwind.css';
 
 function App() {
+  const [isCorrectly, setIsCorrectly] = useState(false);
+  const [isSelect, setIsSelect] = useState(false);
 
   const [techs, setTechs] = useState(['docker', 'postgres', 'firefox', 'git', 'nginx']);
   const [index, setIndex] = useState(0);
+
 
   function handleLastContent() {
     if (index < 4) {
@@ -19,12 +22,17 @@ function App() {
     };
   };
 
+  function CheckSelect(){
+    if (isSelect){
+      
+    }
+  } 
 
   return (
     <>
       <Header />
-      <Flip name={ techs[index] }/>
-      <Discovery name={ techs[index] } handleClick={ handleLastContent }/>
+      <Flip name={ techs[index] } isSelect={}/>
+        <Discovery name={ techs[index] } handleClick={ handleLastContent }/>
       <Footer />
     </>
   );
