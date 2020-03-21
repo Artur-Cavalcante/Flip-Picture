@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from '../Header/Header';
 import Flip from '../Flip/Flip';
@@ -7,11 +7,24 @@ import Footer from '../Footer/Footer';
 import '../Styles/output_tailwind.css';
 
 function App() {
+
+  const [techs, setTechs] = useState(['docker', 'postgres', 'firefox', 'git', 'nginx']);
+  const [index, setIndex] = useState(0);
+
+  function handleLastContent() {
+    if (index < 4) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    };
+  };
+
+
   return (
     <>
       <Header />
-      <Flip />
-      <Discovery />
+      <Flip name={ techs[index] }/>
+      <Discovery name={ techs[index] } handleClick={ handleLastContent }/>
       <Footer />
     </>
   );
