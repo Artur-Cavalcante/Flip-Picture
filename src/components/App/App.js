@@ -14,7 +14,7 @@ function App() {
   const [index, setIndex] = useState(0);
 
 
-  function handleLastContent() {
+  function HandleLastContent() {
     if (index < 4) {
       setIndex(index + 1);
     } else {
@@ -22,17 +22,17 @@ function App() {
     };
   };
 
-  function CheckSelect(){
-    if (isSelect){
+  // // function CheckSelect(){
+  //   if (isSelect){
       
-    }
-  } 
+  //   }
+  // } 
 
   return (
     <>
       <Header />
-      <Flip name={ techs[index] } isSelect={}/>
-        <Discovery name={ techs[index] } handleClick={ handleLastContent }/>
+      <Flip name={ techs[index] } />
+        <Discovery name={ techs[index] } handleClick={ HandleLastContent }/>
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 // Initializing import images
 import docker_top_left from './Techs/Docker/images/top_left.png';
@@ -28,7 +28,7 @@ import postgres_bottom_right from './Techs/Postgres/images/bottom_right.png';
 
 
 
-function FlipImage(props){
+function FlipImage(props) {
     // Those variables is for the src in tag img into return.
     let top_left = "";
     let top_right = "";
@@ -70,12 +70,54 @@ function FlipImage(props){
             break;
     };
 
+
+
+
+    // const img_top_left = document.getElementById('top_left');
+    // const img_top_right = document.getElementById('top_right');
+    // const img_bottom_left = document.getElementById('bottom_left');
+    // const img_bottom_right = document.getElementById('bottom_right');
+
+    // const [isTopLeftClicked, setIsTopLeftClicked] = useState(false);
+    // const [isTopRightClicked, setIsTopRightClicked] = useState(false);
+    // const [isBottomLeftClicked, setIsBottomLeftClicked] = useState(false);
+    // const [isBottomRightClicked, setIsBottomRightClicked] = useState(false);
+
+    // function HandleSelect(element) {
+    //     if (element === isTopLeftClicked){
+    //         const img_top_left = document.getElementById('top_left');
+    //         if (element == false){
+    //             setIsTopLeftClicked(true);
+    //             img_top_left.classList.add('select');
+    //         }else{
+    //             setIsTopLeftClicked(false);
+    //             img_top_left.classList.remove('select');
+    //         }
+    //     };
+    // };
+        
+
+    const [TopLeftClass, setTopLeftClass] = useState(' ');
+    const [TopRightClass, setTopRightClass] = useState(' ');
+    const [BottomLeftClass, setBottomLeftClass] = useState(' ');
+    const [BottomRightClass, setBottomRightClass] = useState(' ');
+    
+    function handleClickTopLeft(){
+       if (TopLeftClass.indexOf('select') != -1){
+           setTopLeftClass(TopLeftClass.replace('select', ''));
+       }else{
+           setTopLeftClass(TopLeftClass.concat('select'));
+       };
+       console.log(TopLeftClass)
+    };
+
+
     return (
         <div className="">
-            <img src={top_left} className="" alt="top_left"/>
-            <img src={top_right} className="" alt="top_right"/>
-            <img src={bottom_left} className="" alt="bottom_left"/>
-            <img src={bottom_right} className="" alt="bottom_right"/>
+            <img id="top_left" src={top_left} className={TopLeftClass} onClick={handleClickTopLeft} alt="top_left" />
+            <img id="top_right" src={top_right} className={TopRightClass}   alt="top_right" />
+            <img id="bottom_left" src={bottom_left} className={BottomLeftClass}  alt="bottom_left" />
+            <img id="bottom_right" src={bottom_right} className={BottomRightClass}   alt="bottom_right" />
         </div>
     );
 };
