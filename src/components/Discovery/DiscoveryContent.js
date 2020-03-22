@@ -10,22 +10,16 @@ function DiscoveryContent(props) {
     switch (props.name) {
         case "docker":
             return <DockerContent />;
-            break;
         case "firefox":
             return <FirefoxContent />;
-            break;
         case "git":
             return <GitContent />;
-            break;
         case "nginx":
             return <NginxContent />;
-            break;
         case "postgres":
             return <PostgresContent />;
-            break;
         default:
             return <div></div>;
-            break;
     };
 };
 

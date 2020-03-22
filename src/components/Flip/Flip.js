@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState }from 'react';
 import Button from '../Button/Button';
 import FlipImage from './FlipImage';
 
 function Flip(props) {
+    
     return (
+
         <section className = "" >
             <div className="">
-                <FlipImage name={props.name} imgSelect={props.isSelect} />
+                <FlipImage name={props.name} />
             </div>
 
             <div className="">

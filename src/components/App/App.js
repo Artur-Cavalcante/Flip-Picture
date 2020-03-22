@@ -7,9 +7,6 @@ import Footer from '../Footer/Footer';
 import '../Styles/output_tailwind.css';
 
 function App() {
-  const [isCorrectly, setIsCorrectly] = useState(false);
-  const [isSelect, setIsSelect] = useState(false);
-
   const [techs, setTechs] = useState(['docker', 'postgres', 'firefox', 'git', 'nginx']);
   const [index, setIndex] = useState(0);
 
@@ -22,11 +19,6 @@ function App() {
     };
   };
 
-  // // function CheckSelect(){
-  //   if (isSelect){
-      
-  //   }
-  // } 
 
   return (
     <>
