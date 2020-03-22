@@ -93,6 +93,8 @@ function FlipImage(props) {
         return img;
     }
 
+
+
     function handleClickTopLeft() {
         if (CheckWichSelect() == false ||  CheckWichSelect() == 'top_left' ) {
             if (TopLeftClass.indexOf('select') !== -1) {
@@ -100,19 +102,16 @@ function FlipImage(props) {
             }else{
                 setTopLeftClass(TopLeftClass.concat('select'));
             };
-            console.log('TOpLeft', TopLeftClass, 'TopRight', TopRightClass, 'BottomRight', BottomRightClass, 'BottomLeft', BottomLeftClass);
         }
     };
 
     function handleClickTopRight() {
-
         if (CheckWichSelect() == 'top_right' || CheckWichSelect() == false) {
             if (TopRightClass.indexOf('select') !== -1) {
                 setTopRightClass(TopRightClass.replace('select', ''));
             } else {
                 setTopRightClass(TopRightClass.concat('select'));
             };
-            console.log('TOpLeft', TopLeftClass, 'TopRight', TopRightClass, 'BottomRight', BottomRightClass, 'BottomLeft', BottomLeftClass);
         }
     };
 
@@ -123,7 +122,6 @@ function FlipImage(props) {
             } else {
                 setBottomLeftClass(BottomLeftClass.concat('select'));
             };
-            console.log('TOpLeft', TopLeftClass, 'TopRight', TopRightClass, 'BottomRight', BottomRightClass, 'BottomLeft', BottomLeftClass);
         }
     };
 
@@ -134,9 +132,10 @@ function FlipImage(props) {
             } else {
                 setBottomRightClass(BottomRightClass.concat('select'));
             };
-            console.log('TOpLeft', TopLeftClass, 'TopRight', TopRightClass, 'BottomRight', BottomRightClass, 'BottomLeft', BottomLeftClass);
         }
     };
+
+
 
 
     return (
