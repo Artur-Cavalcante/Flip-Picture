@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css'
 
 // Initializing import images
@@ -26,8 +26,6 @@ import postgres_top_left from './Techs/Postgres/images/top_left.png';
 import postgres_top_right from './Techs/Postgres/images/top_right.png';
 import postgres_bottom_left from './Techs/Postgres/images/bottom_left.png';
 import postgres_bottom_right from './Techs/Postgres/images/bottom_right.png';
-
-
 
 function FlipImage(props) {
     // Those variables is for the src in tag img into return.
@@ -100,7 +98,7 @@ function FlipImage(props) {
             if (TopLeftClass.indexOf('select') !== -1) {
                 setTopLeftClass(TopLeftClass.replace('select', ''));
             }else{
-                setTopLeftClass(TopLeftClass.concat('select'));
+                setTopLeftClass(TopLeftClass.concat(' select'));
             };
         }
     };
@@ -136,14 +134,24 @@ function FlipImage(props) {
     };
 
 
-
+    function TurnLeftTopLeft(){
+        console.log(TopLeftClass)
+        setTopLeftClass(TopLeftClass.concat(' turn_left'));
+    }
+    function TurnRightTopLeft(){
+        setTopLeftClass(TopLeftClass.concat(' turn_right'))
+    }   
+    
+    useEffect(() => {
+        TurnLeftTopLeft()
+    }, [props.TopLeftOrientation])
 
     return (
-        <div className="">
+        <div className="box-img">
             <img
                 id="img_top_left"
                 src={top_left}
-                className={'blue ' + TopLeftClass} //Concatenar as classes das imagens aqui
+                className={TopLeftClass} //Concatenar as classes das imagens aqui
                 onClick={handleClickTopLeft}
                 alt="top_left"
             />
