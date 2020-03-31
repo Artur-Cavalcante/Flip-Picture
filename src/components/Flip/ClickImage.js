@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './style.css'
 
-// Initializing import images
+// Importing images
 import docker_top_left from './Techs/Docker/images/top_left.png';
 import docker_top_right from './Techs/Docker/images/top_right.png';
 import docker_bottom_left from './Techs/Docker/images/bottom_left.png';
@@ -69,111 +69,80 @@ function FlipImage(props) {
             break;
     };
 
-    const [TopLeftClass, setTopLeftClass] = useState(' ');
-    const [TopRightClass, setTopRightClass] = useState(' ');
-    const [BottomLeftClass, setBottomLeftClass] = useState(' ');
-    const [BottomRightClass, setBottomRightClass] = useState(' ');
-
-    function CheckWichSelect() {
-        var img = false;
-        if (TopLeftClass.indexOf('select') != -1) {
-            img = 'top_left';
-        }
-        if (TopRightClass.indexOf('select') != -1) {
-            img = 'top_right';
-        }
-        if (BottomLeftClass.indexOf('select') != -1) {
-            img = 'bottom_left';
-        }
-        if (BottomRightClass.indexOf('select') != -1) {
-            img = 'bottom_right';
-        }
-        return img;
+    function handleTopLeftClick() {
+        props.AddOrRemoveSelectTopLeft();
     }
 
-
-
-    function handleClickTopLeft() {
-        if (CheckWichSelect() == false ||  CheckWichSelect() == 'top_left' ) {
-            if (TopLeftClass.indexOf('select') !== -1) {
-                setTopLeftClass(TopLeftClass.replace('select', ''));
-            }else{
-                setTopLeftClass(TopLeftClass.concat(' select'));
-            };
-        }
-    };
-
-    function handleClickTopRight() {
-        if (CheckWichSelect() == 'top_right' || CheckWichSelect() == false) {
-            if (TopRightClass.indexOf('select') !== -1) {
-                setTopRightClass(TopRightClass.replace('select', ''));
-            } else {
-                setTopRightClass(TopRightClass.concat('select'));
-            };
-        }
-    };
-
-    function handleClickBottomLeft() {
-        if (CheckWichSelect() == 'bottom_left' || CheckWichSelect() == false) {
-            if (BottomLeftClass.indexOf('select') !== -1) {
-                setBottomLeftClass(BottomLeftClass.replace('select', ''));
-            } else {
-                setBottomLeftClass(BottomLeftClass.concat('select'));
-            };
-        }
-    };
-
-    function handleClickBottomRight() {
-        if (CheckWichSelect() == 'bottom_right' || CheckWichSelect() == false) {
-            if (BottomRightClass.indexOf('select') !== -1) {
-                setBottomRightClass(BottomRightClass.replace('select', ''));
-            } else {
-                setBottomRightClass(BottomRightClass.concat('select'));
-            };
-        }
-    };
-
-
-    function TurnLeftTopLeft(){
-        console.log(TopLeftClass)
-        setTopLeftClass(TopLeftClass.concat(' turn_left'));
+    function handleTopRightClick() {
+        props.AddOrRemoveSelectTopRight();
     }
-    function TurnRightTopLeft(){
-        setTopLeftClass(TopLeftClass.concat(' turn_right'))
-    }   
+
+    function handleBottomLeftClick() {
+        props.AddOrRemoveSelectBottomLeft();
+    }
+
+    function handleBottomRightClick() {
+        props.AddOrRemoveSelectBottomRight();
+    }
+
+    const transformTopLeft = props.RotationTopLeft;
+    const transformTopRight = props.RotationTopRight;
+    const transformBottomLeft = props.RotationBottomLeft;
+    const transformBottomRight = props.RotationBottomRight;
     
-    useEffect(() => {
-        TurnLeftTopLeft()
-    }, [props.TopLeftOrientation])
+    console.log(transformTopLeft)
+    console.log(transformTopRight)
+    console.log(transformBottomLeft)
+    console.log(transformBottomRight)
+
+
+
+    let styleTopLeft  = {
+        transform: 'rotate(' + transformTopLeft + 'deg)'
+    }
+    let styleTopRight  = {
+        transform: 'rotate(' + transformTopRight + 'deg)'
+    }
+    let styleBottomLeft  = {
+        transform: 'rotate(' + transformBottomLeft + 'deg)'
+    }
+    let styleBottomRight  = {
+        transform: 'rotate(' + transformBottomRight + 'deg)'
+    }
+
 
     return (
         <div className="box-img">
             <img
                 id="img_top_left"
                 src={top_left}
-                className={TopLeftClass} //Concatenar as classes das imagens aqui
-                onClick={handleClickTopLeft}
+                className={props.TopLeftClass}
+                style={styleTopLeft}
+                onClick={handleTopLeftClick}
                 alt="top_left"
             />
             <img
                 id="img_top_right"
                 src={top_right}
-                className={TopRightClass}
-                onClick={handleClickTopRight}
+                className={props.TopRightClass}
+                style={styleTopRight}
+                onClick={handleTopRightClick}
                 alt="top_right"
             />
             <img
                 id="img_bottom_left"
                 src={bottom_left}
-                className={BottomLeftClass}
-                onClick={handleClickBottomLeft}
+                className={props.BottomLeftClass}
+                style={styleBottomLeft}
+                onClick={handleBottomLeftClick}
                 alt="bottom_left"
             />
             <img
                 id="img_bottom_right"
                 src={bottom_right}
-                className={BottomRightClass}
-                onClick={handleClickBottomRight}
+                className={props.BottomRightClass}
+                style={styleBottomRight}
+                onClick={handleBottomRightClick}
                 alt="bottom_right"
             />
         </div>

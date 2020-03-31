@@ -3,11 +3,3 @@
 .select{
     border: 2px blue solid;
 }
-
-.turn_left{
-    transform: rotate(-90deg);
-}
-
-.turn_right{
-    transform: rotate(90deg);
-}
